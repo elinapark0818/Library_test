@@ -1,29 +1,17 @@
-import './app.css';
-import Goo from 'gooey-react';
+import React from 'react';
+import styles from './app.module.css';
+import 'react-awesome-button/dist/themes/theme-blue.css';
+import Button from './components/awesome_btn/awesome_btn';
+
 
 function App() {
   return (
-    <Goo style={{ animation: 'left 4s linear infinite' }}
-      intensity="weak"
-      >
-      <svg width="192" height="192">
-        <circle 
-          style={{ animation: 'right 1s linear infinite' }} 
-          cx="37%" 
-          cy="37%" 
-          fill="orchid" 
-          r="32" 
-        />
-        <circle 
-          style={{ animation: 'right 1s linear infinite' }} 
-          cx="63%" 
-          cy="63%" 
-          fill="mediumorchid" 
-          r="32" 
-        />
-      </svg>
-    </Goo>
-  )
-};
+    <div className={styles.container}>
+      <Button />
+    </div>
+    
+  );
+}
+
 
 export default App;
