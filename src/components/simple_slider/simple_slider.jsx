@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import './simple_slider.css';
 
 export default class AutoPlay extends Component {
   render() {
